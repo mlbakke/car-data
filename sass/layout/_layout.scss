@@ -1,0 +1,13 @@
+.container {
+    @include container-properties;
+
+    //flexbox properties
+    display: flex;
+}
+
+.side-nav {
+    padding-top: 2rem;
+
+    //Flex item properties
+    flex: 0 0 15%;
+}
