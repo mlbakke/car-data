@@ -1,15 +1,13 @@
 .header {
     padding: .5rem 2rem;
     background-color: var(--color-dark);
+    width: 100%;
+    border-bottom: 2px solid var(--color-light-2);
 
-    &__container {
-        @include container-properties;
-
-        //flexbox properties
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
+    //flexbox properties
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .logo {
