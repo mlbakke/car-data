@@ -1,0 +1,19 @@
+.discussions {
+    padding: 1rem .5rem;
+    width: 100%;
+    font-size: 1.2rem;
+
+    &__heading {
+        display: inline;
+    }
+
+    &__topic {
+        display: inline;
+        padding-left: .2rem;
+        
+        //separate each topic
+        &:not(:last-child):after {
+            content: " | ";
+        }
+    }
+}
