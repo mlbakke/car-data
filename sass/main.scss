@@ -1,12 +1,11 @@
-@import "abstracts/variables";
 @import "abstracts/mixins";
+@import "abstracts/variables";
 
 @import "base/base";
 
-@import "components/bottom-news";
 @import "components/brands";
 @import "components/discussions";
-@import "components/top-news";
+@import "components/news";
 
 @import "layout/footer";
 @import "layout/header";
