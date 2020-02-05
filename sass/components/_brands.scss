@@ -1,0 +1,28 @@
+.brands {
+    margin-bottom: 5rem;
+    padding: 0 2rem;
+
+    //flexbox properties
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    &__figure {
+        padding: 0 2rem;
+        margin-bottom: 2rem;
+
+        &:last-child {
+            margin-right: auto;
+        }
+    }
+
+    &__logo {
+        width: 8rem;
+    }
+
+    &__name {
+        font-size: 1.2rem;
+        font-weight: 600;
+        text-align: center;
+    }
+}
