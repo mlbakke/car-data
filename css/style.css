@@ -1,0 +1,182 @@
+:root {
+  --color-primary: #0ce5e1;
+  --color-primary-med: #50b6bb;
+  --color-primary-dark: #45969b;
+  --color-secondary: #ff0340;
+  --color-light: #f2eaec;
+  --color-light-2: #d6cdd0;
+  --color-light-bg: rgba(242, 234, 236, .5);
+  --color-dark: #0a1216; }
+
+/* RESET:
+    http://meyerweb.com/eric/tools/css/reset/ 
+    v2.0 | 20110126
+    License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, input, button,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: inherit; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+a,
+a:link,
+a:visited {
+  text-decoration: none;
+  color: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  line-height: 1.6rem;
+  color: var(--color-dark);
+  min-height: 100vh;
+  background-image: linear-gradient(to bottom right, var(--color-primary-dark), var(--color-primary));
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.brands {
+  margin-bottom: 5rem;
+  padding: 0 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+  .brands__figure {
+    padding: 0 2rem;
+    margin-bottom: 2rem; }
+    .brands__figure:last-child {
+      margin-right: auto; }
+  .brands__logo {
+    width: 8rem; }
+  .brands__name {
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: center; }
+
+.discussions {
+  padding: 1rem .5rem;
+  margin-top: .5rem;
+  width: 100%;
+  font-size: 1.2rem; }
+  .discussions__heading {
+    display: inline; }
+  .discussions__topic {
+    display: inline;
+    padding-left: .2rem; }
+    .discussions__topic:not(:last-child):after {
+      content: " | "; }
+
+.news {
+  display: flex;
+  position: relative; }
+  .news__story {
+    max-width: 33.3333%; }
+  .news__image {
+    width: 100%;
+    display: block; }
+  .news__text {
+    position: relative;
+    font-size: 1.2rem;
+    margin-top: -2rem;
+    padding-left: .5rem;
+    z-index: 3;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; }
+  .news::after {
+    content: '';
+    position: absolute;
+    height: 2.5rem;
+    width: 100%;
+    bottom: -.5rem;
+    left: 0;
+    background-color: var(--color-light-bg);
+    z-index: 1; }
+
+.footer {
+  padding: 1.5rem 2rem;
+  background-color: var(--color-dark);
+  color: var(--color-light);
+  border-top: 2px solid var(--color-light-2);
+  width: 100%; }
+
+.header {
+  padding: .5rem 2rem;
+  background-color: var(--color-dark);
+  width: 100%;
+  border-bottom: 2px solid var(--color-light-2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.logo {
+  width: 5.5rem;
+  height: 5.5rem; }
+
+.container {
+  margin: 5rem auto;
+  max-width: 130rem;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.3); }
+
+.main {
+  display: flex;
+  overflow: hidden; }
+
+.side-nav {
+  padding-top: 2rem;
+  background-color: var(--color-dark);
+  color: var(--color-light);
+  flex: 0 0 15%; }
+
+.content-view {
+  background-color: var(--color-light);
+  flex: 0 0 85%;
+  display: flex;
+  flex-direction: column; }
+
+.heading {
+  font-size: 4.5rem;
+  line-height: 7rem;
+  letter-spacing: 2px;
+  margin: 0 auto; }
