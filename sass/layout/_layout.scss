@@ -1,8 +1,12 @@
 .container {
-    @include container-properties;
+    margin: 5rem auto;
+    max-width: 130rem;
+    box-shadow: 0 2rem 5rem rgba(0,0,0, .3);
+}
 
-    //flexbox properties
+.main {
     display: flex;
+    overflow: hidden;
 }
 
 .side-nav {
