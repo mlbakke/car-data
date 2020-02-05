@@ -1,7 +1,7 @@
 .footer {
     padding: 1.5rem 2rem;
-
-    &__container {
-        @include container-properties;
-    }
+    background-color: var(--color-dark);
+    color: var(--color-light);
+    border-top: 2px solid var(--color-light-2);
+    width: 100%;
 }
