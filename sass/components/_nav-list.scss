@@ -1,0 +1,35 @@
+.nav-list {
+    font-size: 1.4rem;
+    margin-top: 3rem;
+
+    &__item{
+
+        &:not(:last-child) {
+            margin-bottom: .5rem;
+        }
+    }
+
+    &__link,
+    &__link:link,
+    &__link:visited {
+        display: block;
+        text-transform: uppercase;
+        padding: 2rem 2rem;
+        display: flex;
+        align-items: center;
+
+        transition: all .3s;
+
+        &:hover {
+            background-color: var(--color-primary);
+            color: var(--color-dark);
+        }
+    }
+
+    &__icon {
+        width: 2rem;
+        height: 2rem;
+        margin-right: 1rem;
+        fill: currentColor;
+    }
+}
