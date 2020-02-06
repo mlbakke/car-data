@@ -2,13 +2,29 @@
     display: flex;
     position: relative;
 
+    @media only screen and (max-width: $bp-m) {
+        //flexbox properties
+        flex-direction: column;
+    }
+
     &__story {
         max-width: 33.3333%;
+
+        @media only screen and (max-width: $bp-m) {
+            max-width: 100%;
+            max-height: 25rem;
+        }
     }
 
     &__image {
         width: 100%;
         display: block;
+        
+        @media only screen and (max-width: $bp-m) {
+            height: 25rem;
+            object-fit: cover;
+            object-position: (50% 45%);
+        }
     }
 
     &__text {
@@ -16,27 +32,28 @@
         font-size: 1.2rem;
         font-weight: 600;
         margin-top: -2rem;
-        padding-left: .5rem;
-
-        //place in front of ::after background
-        z-index: 3;
+        padding: .5rem;
+        background-color: var(--color-light-bg);
 
         //avoid text wrapping
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
     }
+}
 
-    //transparent light background to make figcaption readable
-    &::after {
-        content: '';
-        position: absolute;
-        height: 2.5rem;
-        width: 100%;
-        bottom: -.5rem;
-        left: 0;
-        background-color: var(--color-light-bg);
+//As each news section switches to column, move top news below brand overview
+.news-top {
+    @media only screen and (max-width: $bp-m) {
+        order: 1;
+    }
+}
 
-        z-index: 1;
+.news-bottom {
+    //to avoid gap between news and footer
+    margin-bottom: -.5rem;
+
+    @media only screen and (max-width: $bp-m) {
+        order: 2;
     }
 }
