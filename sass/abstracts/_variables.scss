@@ -8,7 +8,13 @@
 
     --color-light: #f2eaec;
     --color-light-2: #d6cdd0;
-    --color-light-bg: rgba(242, 234, 236, .5);
+    --color-light-bg: rgba(242, 234, 236, .4);
 
     --color-dark: #0a1216;
 }
+
+//BREAKPOINTS
+$bp-xl: 81.25em;    //1300px
+$bp-l: 72.5em;      //1160px
+$bp-m: 59.375em;    //950px
+$bp-sm: 46.875em;     //750px
