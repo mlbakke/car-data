@@ -2,11 +2,22 @@
     margin: 5rem auto;
     max-width: 130rem;
     box-shadow: 0 2rem 5rem rgba(0,0,0, .3);
+
+    @media only screen and (max-width: $bp-xl) {
+        margin: 0;
+    }
+    @media only screen and (max-width: $bp-l) {
+        max-width: 100%;
+    }
 }
 
 .main {
     display: flex;
     overflow: hidden;
+
+    @media only screen and (max-width: $bp-sm) {
+        flex-direction: column;
+    }
 }
 
 .side-nav {
@@ -32,4 +43,9 @@
     line-height: 7rem;
     letter-spacing: 2px;
     margin: 4rem auto;
+
+    
+    @media only screen and (max-width: $bp-m) {
+        margin: 3rem auto;
+    }
 }

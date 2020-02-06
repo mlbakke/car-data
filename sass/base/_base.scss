@@ -57,7 +57,11 @@ a:visited {
 // BASE SETTINGS
 html {
     box-sizing: border-box;
-    font-size: 62.5%;   //10px
+	font-size: 62.5%;   //10px
+	
+	@media only screen and (max-width: $bp-l) {
+        font-size: 50%;	//8px
+    }
 }
 
 body {
