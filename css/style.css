@@ -67,7 +67,7 @@ html {
   font-size: 62.5%; }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   line-height: 1.6rem;
   color: var(--color-dark);
@@ -80,13 +80,10 @@ body {
   margin-bottom: 5rem;
   padding: 0 2rem;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around; }
+  flex-wrap: wrap; }
   .brands__figure {
     padding: 0 2rem;
     margin-bottom: 2rem; }
-    .brands__figure:last-child {
-      margin-right: auto; }
   .brands__logo {
     width: 8rem; }
   .brands__name {
@@ -100,12 +97,34 @@ body {
   width: 100%;
   font-size: 1.2rem; }
   .discussions__heading {
-    display: inline; }
+    display: inline;
+    font-weight: 600; }
   .discussions__topic {
     display: inline;
     padding-left: .2rem; }
     .discussions__topic:not(:last-child):after {
       content: " | "; }
+
+.nav-list {
+  font-size: 1.4rem;
+  margin-top: 3rem; }
+  .nav-list__item:not(:last-child) {
+    margin-bottom: .5rem; }
+  .nav-list__link, .nav-list__link:link, .nav-list__link:visited {
+    display: block;
+    text-transform: uppercase;
+    padding: 2rem 2rem;
+    display: flex;
+    align-items: center;
+    transition: all .3s; }
+    .nav-list__link:hover, .nav-list__link:link:hover, .nav-list__link:visited:hover {
+      background-color: var(--color-primary);
+      color: var(--color-dark); }
+  .nav-list__icon {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
+    fill: currentColor; }
 
 .news {
   display: flex;
@@ -118,6 +137,7 @@ body {
   .news__text {
     position: relative;
     font-size: 1.2rem;
+    font-weight: 600;
     margin-top: -2rem;
     padding-left: .5rem;
     z-index: 3;
@@ -151,8 +171,32 @@ body {
   align-items: center; }
 
 .logo {
+  margin-left: 2rem;
   width: 5.5rem;
   height: 5.5rem; }
+
+.search__input {
+  padding: .7rem 3rem;
+  border-radius: 2rem;
+  font-size: 1.2rem;
+  background-color: var(--color-light-2);
+  outline: none;
+  transition: background-color .5s; }
+  .search__input:focus {
+    background-color: var(--color-light); }
+
+.search__button {
+  position: relative;
+  background-color: transparent; }
+
+.search__icon {
+  cursor: pointer;
+  position: absolute;
+  top: -1.4rem;
+  left: -3rem;
+  width: 2rem;
+  height: 2rem;
+  fill: var(--color-dark); }
 
 .container {
   margin: 5rem auto;
@@ -164,7 +208,6 @@ body {
   overflow: hidden; }
 
 .side-nav {
-  padding-top: 2rem;
   background-color: var(--color-dark);
   color: var(--color-light);
   flex: 0 0 15%; }
@@ -176,7 +219,8 @@ body {
   flex-direction: column; }
 
 .heading {
+  font-family: 'Arvo', serif;
   font-size: 4.5rem;
   line-height: 7rem;
   letter-spacing: 2px;
-  margin: 0 auto; }
+  margin: 4rem auto; }
