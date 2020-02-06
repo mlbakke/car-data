@@ -11,6 +11,38 @@
 }
 
 .logo {
+    margin-left: 2rem;
     width: 5.5rem;
     height: 5.5rem;
+}
+
+.search {
+
+    &__input {
+        padding: .7rem 3rem;
+        border-radius: 2rem;
+        font-size: 1.2rem;
+        background-color: var(--color-light-2);
+        outline: none;
+        transition: background-color .5s;
+
+        &:focus {
+            background-color: var(--color-light);
+        }
+    }
+
+    &__button {
+        position: relative;
+        background-color: transparent;
+    }
+
+    &__icon {
+        cursor: pointer;
+        position: absolute;
+        top: -1.4rem;
+        left: -3rem;
+        width: 2rem;
+        height: 2rem;
+        fill: var(--color-dark);
+    }
 }
