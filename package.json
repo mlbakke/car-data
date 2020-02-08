@@ -1,7 +1,7 @@
 {
   "name": "car-data",
   "version": "1.0.0",
-  "description": "Landing page for a online store soon to launch",
+  "description": "Landing page for a website with car specifications",
   "main": "index.js",
   "scripts": {
     "watch:sass": "node-sass sass/main.scss css/style.css -w",
