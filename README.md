@@ -1,5 +1,3 @@
 # car-data
 
-Landing site for website with car specifications
-
-Layout made with flexbox
+Landing site for website with car specifications made with flexbox
